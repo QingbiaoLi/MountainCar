@@ -65,7 +65,7 @@ for i=1:maxepisodes
    
     %if (i>200)
     if (i == 201||i == 230||i == 250)
-        %grafica=true;
+        grafica=true;
     else 
         grafica=false;
     end

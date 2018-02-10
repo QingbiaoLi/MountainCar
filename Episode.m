@@ -37,18 +37,19 @@ a   = e_greedy_selection(Q,s,epsilon);
 
 
 for i=1:maxsteps    
-     
+     %{
     for k = 1: nstates
         % no sure
         error(k)=error(k)+ radbas(dist(statelist,x'));
     end
+    %}
     % convert the index of the action into an action value
     action = actionlist(a);    
     
     %do the selected action and get the next car state    
     xp  = DoAction( action , x );    
     
-    delta = 
+    %delta = 
     
     % observe the reward at state xp and the final state flag
     [r,f]   = GetReward(xp);
